@@ -34,7 +34,7 @@ public:
 			for (int i = 0; i <= m_count-1; ++i)
 			{
 				newparr[i]=m_pdata[i] ;
-				/*delete m_pdata[i]; ¾ê ¿Ö ¾ÈµÊ*/
+				/*delete m_pdata[i]; ì–˜ ì™œ ì•ˆë¨*/
 			}
 			delete[] m_pdata;
 			m_pdata = newparr;
@@ -59,7 +59,7 @@ public:
 			for (int i = 0; i <= m_count; ++i)
 			{
 				newparr[i] = m_pdata[i];
-				/*delete m_pdata[i]; ¾ê ¿Ö ¾ÈµÊ*/
+				/*delete m_pdata[i]; ì–˜ ì™œ ì•ˆë¨*/
 			}
 			delete[] m_pdata;
 			m_pdata = newparr;
@@ -69,9 +69,8 @@ public:
 		for (int i =m_count -1; i >=0; --i)
 		{
 			m_pdata[i + 1] = m_pdata[i];
-		}//¸ð¸£°ÚÀ½ Á»´õ °í¹ÎÇØºÁ¾ßµÊ
+		}
 		m_pdata[0] = *data;
-		m_count += 1;
 	}
 
 };
