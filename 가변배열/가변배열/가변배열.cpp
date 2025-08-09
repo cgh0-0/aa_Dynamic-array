@@ -72,5 +72,19 @@ public:
 		}
 		m_pdata[0] = *data;
 	}
+	void bubblesort()
+	{	for(int j=1;j<=m_count-1;++j)
+		{
+			for (int i = 0; i < m_count-1-j; ++i)
+			{
+				if (m_pdata[i] > m_pdata[i + 1])
+				{
+					int a = m_pdata[i];
+					m_pdata[i] = m_pdata[i + 1];
+					m_pdata[i + 1] = a;
+				}
 
+			}
+		 }
+	}
 };
